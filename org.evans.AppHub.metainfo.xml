@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.evans.AppHub</id>
+  <name>App Hub</name>
+  <summary>Download manager and AppImage launcher</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <launchable type="desktop-id">org.evans.AppHub.desktop</launchable>
+  <provides>
+    <binary>org.evans.AppHub</binary>
+  </provides>
+  <description>
+    <p>
+      App Hub combines a lightweight download manager with an AppImage scanner,
+      launcher, and desktop integration utility.
+    </p>
+  </description>
+  <developer id="org.evans">
+    <name>Evans</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.0.0" date="2026-02-25"/>
+  </releases>
+</component>

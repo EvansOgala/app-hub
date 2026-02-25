@@ -1,0 +1,28 @@
+app-id: org.evans.AppHub
+runtime: org.gnome.Platform
+runtime-version: "48"
+sdk: org.gnome.Sdk
+command: org.evans.AppHub
+finish-args:
+  - --share=ipc
+  - --socket=wayland
+  - --socket=x11
+  - --share=network
+  - --filesystem=home
+
+modules:
+  - name: app-hub
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 run-app-hub.sh /app/bin/org.evans.AppHub
+      - install -Dm644 main.py /app/share/org.evans.AppHub/main.py
+      - install -Dm644 ui.py /app/share/org.evans.AppHub/ui.py
+      - install -Dm644 downloads.py /app/share/org.evans.AppHub/downloads.py
+      - install -Dm644 appimage.py /app/share/org.evans.AppHub/appimage.py
+      - install -Dm644 settings.py /app/share/org.evans.AppHub/settings.py
+      - install -Dm644 org.evans.AppHub.desktop /app/share/applications/org.evans.AppHub.desktop
+      - install -Dm644 org.evans.AppHub.metainfo.xml /app/share/metainfo/org.evans.AppHub.metainfo.xml
+      - install -Dm644 org.evans.AppHub.svg /app/share/icons/hicolor/scalable/apps/org.evans.AppHub.svg
+    sources:
+      - type: dir
+        path: .
