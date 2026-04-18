@@ -17,6 +17,7 @@ modules:
       - install -Dm755 run-app-hub.sh /app/bin/org.evans.AppHub
       - install -Dm644 main.py /app/share/org.evans.AppHub/main.py
       - install -Dm644 ui.py /app/share/org.evans.AppHub/ui.py
+      - install -Dm644 gtk_style.py /app/share/org.evans.AppHub/gtk_style.py
       - install -Dm644 downloads.py /app/share/org.evans.AppHub/downloads.py
       - install -Dm644 appimage.py /app/share/org.evans.AppHub/appimage.py
       - install -Dm644 settings.py /app/share/org.evans.AppHub/settings.py

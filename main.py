@@ -1,16 +1,15 @@
-import tkinter as tk
-
-from ui import AppHub
+from __future__ import annotations
 
 
-def main():
-    root = tk.Tk()
+def main() -> None:
     try:
-        root.tk.call("wm", "class", root._w, "AppHub")
-    except tk.TclError:
-        pass
-    AppHub(root)
-    root.mainloop()
+        from ui import AppHubApp
+    except Exception as exc:
+        print(exc)
+        raise SystemExit(1)
+
+    app = AppHubApp()
+    app.run(None)
 
 
 if __name__ == "__main__":
