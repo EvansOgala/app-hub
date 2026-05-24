@@ -57,6 +57,8 @@ headerbar,
 list.boxed-list,
 entry,
 dropdown,
+notebook,
+notebook > header,
 notebook > stack,
 scrolledwindow,
 frame > border {{
@@ -71,6 +73,8 @@ dropdown,
 scrolledwindow,
 list.boxed-list,
 frame > border,
+notebook,
+notebook > header,
 notebook > stack {{
   border-radius: 18px;
   border: 1px solid {palette['border']};
@@ -78,7 +82,9 @@ notebook > stack {{
 
 entry {{
   background: {palette['entry_bg']};
+  background-color: {palette['entry_bg']};
   color: {palette['entry_fg']};
+  border: 1px solid {palette['border']};
 }}
 
 label,
@@ -138,12 +144,34 @@ list.boxed-list row:selected {{
 }}
 
 notebook header {{
+  background: {palette['panel_bg']};
+  border-radius: 999px;
+  border: 1px solid {palette['border']};
   margin-bottom: 8px;
+  padding: 4px;
+}}
+
+notebook > header > tabs {{
+  background: transparent;
+  border-radius: 999px;
 }}
 
 notebook > header > tabs > tab {{
+  background: {palette['panel_bg']};
+  color: {palette['text']};
   border-radius: 999px;
   padding: 8px 14px;
+  border: 1px solid transparent;
+}}
+
+notebook > header > tabs > tab:hover {{
+  background: {palette['row_hover']};
+}}
+
+notebook > header > tabs > tab:selected,
+notebook > header > tabs > tab:checked {{
+  background: {palette['accent']};
+  color: {palette['accent_fg']};
 }}
 """.encode("utf-8")
 

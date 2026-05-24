@@ -1,12 +1,22 @@
 # -*- mode: python ; coding: utf-8 -*-
 
+import os
+
+project_path = os.path.abspath(os.path.dirname(__file__))
 
 a = Analysis(
     ['main.py'],
-    pathex=[],
+    pathex=[project_path],
     binaries=[],
     datas=[],
-    hiddenimports=[],
+    hiddenimports=[
+        'gi',
+        'gi.repository.Gtk',
+        'gi.repository.Gio',
+        'gi.repository.GLib',
+        'gi.repository.GObject',
+        'gi.repository.GdkPixbuf',
+    ],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
