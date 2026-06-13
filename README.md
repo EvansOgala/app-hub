@@ -1,10 +1,10 @@
 # App Hub
 
-App Hub is a Python desktop utility with a GTK4 interface for managing direct downloads and local AppImage files.
+App Hub is a Python desktop utility with a Qt interface for managing direct downloads and local AppImage files.
 
 ## Features
 
-- GTK4 desktop UI with light and dark themes
+- Qt desktop UI with light and dark themes
 - Download manager with pause, resume, cancel, and remove actions
 - AppImage scanning across configurable directories
 - AppImage launching and desktop integration helpers
@@ -13,13 +13,12 @@ App Hub is a Python desktop utility with a GTK4 interface for managing direct do
 ## Runtime Dependencies
 
 - Python 3
-- GTK4
-- PyGObject
+- Qt for Python (PySide6)
 
 On Arch Linux:
 
 ```bash
-sudo pacman -S --needed python python-gobject gtk4
+sudo pacman -S --needed python python-pyside6
 ```
 
 ## Run From Source

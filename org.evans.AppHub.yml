@@ -1,7 +1,7 @@
 app-id: org.evans.AppHub
-runtime: org.gnome.Platform
-runtime-version: "48"
-sdk: org.gnome.Sdk
+runtime: org.kde.Platform
+runtime-version: "6.9"
+sdk: org.kde.Sdk
 command: org.evans.AppHub
 finish-args:
   - --share=ipc
@@ -17,7 +17,7 @@ modules:
       - install -Dm755 run-app-hub.sh /app/bin/org.evans.AppHub
       - install -Dm644 main.py /app/share/org.evans.AppHub/main.py
       - install -Dm644 ui.py /app/share/org.evans.AppHub/ui.py
-      - install -Dm644 gtk_style.py /app/share/org.evans.AppHub/gtk_style.py
+      - install -Dm644 qt_style.py /app/share/org.evans.AppHub/qt_style.py
       - install -Dm644 downloads.py /app/share/org.evans.AppHub/downloads.py
       - install -Dm644 appimage.py /app/share/org.evans.AppHub/appimage.py
       - install -Dm644 settings.py /app/share/org.evans.AppHub/settings.py

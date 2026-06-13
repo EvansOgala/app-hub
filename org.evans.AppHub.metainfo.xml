@@ -2,7 +2,7 @@
 <component type="desktop-application">
   <id>org.evans.AppHub</id>
   <name>App Hub</name>
-  <summary>GTK4 download manager and AppImage launcher</summary>
+  <summary>Qt download manager and AppImage launcher</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
   <launchable type="desktop-id">org.evans.AppHub.desktop</launchable>
@@ -12,7 +12,7 @@
   <description>
     <p>
       App Hub combines a lightweight direct-download manager with an AppImage
-      scanner, launcher, and desktop integration utility in a GTK4 desktop UI.
+      scanner, launcher, and desktop integration utility in a Qt desktop UI.
     </p>
   </description>
   <developer id="org.evans">

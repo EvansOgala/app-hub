@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=App Hub
-Comment=GTK4 download manager and AppImage launcher
+Comment=Qt download manager and AppImage launcher
 Exec=org.evans.AppHub
 Icon=org.evans.AppHub
 Terminal=false
