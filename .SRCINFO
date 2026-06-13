@@ -9,7 +9,7 @@ pkgbase = app-hub-git
 	options = !debug
 	makedepends = git
 	depends = python
-	depends = python-pyside6
+	depends = pyside6
 	source = app-hub-git::git+https://github.com/EvansOgala/app-hub.git
 	sha256sums = SKIP
 

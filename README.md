@@ -18,7 +18,7 @@ App Hub is a Python desktop utility with a Qt interface for managing direct down
 On Arch Linux:
 
 ```bash
-sudo pacman -S --needed python python-pyside6
+sudo pacman -S --needed python pyside6
 ```
 
 ## Run From Source

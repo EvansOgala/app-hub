@@ -7,7 +7,7 @@ url="https://github.com/EvansOgala/app-hub"
 license=('MIT')
 depends=(
   'python'
-  'python-pyside6'
+  'pyside6'
 )
 makedepends=('git')
 source=("$pkgname::git+https://github.com/EvansOgala/app-hub.git")
