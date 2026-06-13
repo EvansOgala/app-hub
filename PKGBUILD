@@ -1,5 +1,5 @@
 pkgname=app-hub-git
-pkgver=0.r3.g8c68fa8
+pkgver=0.r7.g87a8bde
 pkgrel=1
 pkgdesc="Qt download manager and AppImage launcher"
 arch=('any')
